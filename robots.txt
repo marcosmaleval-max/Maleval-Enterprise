@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maleval-traducoes.netlify.app/sitemap.xml
