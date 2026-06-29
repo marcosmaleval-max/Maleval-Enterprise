@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maleval-traducoes.netlify.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
   </url>
+  <url>
+    <loc>https://maleval-traducoes.netlify.app/index-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
+  </url>
+  <url><loc>https://maleval-traducoes.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maleval-traducoes.netlify.app/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maleval-traducoes.netlify.app/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maleval-traducoes.netlify.app/blog/traducao-juridica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
