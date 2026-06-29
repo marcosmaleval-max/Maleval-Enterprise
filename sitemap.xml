@@ -15,6 +15,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
   </url>
+  <url><loc>https://maleval-traducoes.netlify.app/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
