@@ -10,6 +10,9 @@
 <link rel="canonical" href="https://maleval-traducoes.netlify.app/" />
 <link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/" />
 <link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html" />
+<link rel="alternate" hreflang="es" href="https://maleval-traducoes.netlify.app/index-es.html" />
+<link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html" />
+<link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html" />
 
 <!-- Geo / SEO local -->
 <meta name="geo.region" content="BR-RN" />
@@ -49,8 +52,33 @@
   },
   "geo": { "@type": "GeoCoordinates", "latitude": -5.7945, "longitude": -35.2110 },
   "knowsLanguage": ["pt", "en", "es", "fr", "it", "de", "zh"],
-  "sameAs": ["https://www.linkedin.com/in/marcos-maleval-868b7a242/"]
+  "sameAs": ["https://www.linkedin.com/in/marcos-maleval-868b7a242/"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "reviewCount": "13"
+  }
 }
+</script>
+
+<!-- Detecção automática de idioma -->
+<script>
+window.MV_LANG='pt';
+(function(){
+  var SUP={pt:'/',en:'/index-en.html',es:'/index-es.html',fr:'/index-fr.html'};
+  var CUR=window.MV_LANG;
+  try{
+    var pref=localStorage.getItem('maleval_lang');
+    if(pref&&SUP[pref]){ if(pref!==CUR) location.replace(SUP[pref]); return; }
+    if(!sessionStorage.getItem('maleval_auto')){
+      sessionStorage.setItem('maleval_auto','1');
+      var l=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase().slice(0,2);
+      if(SUP[l]){ if(l!==CUR) location.replace(SUP[l]); }
+      else { document.cookie='googtrans=/'+CUR+'/'+l+';path=/'; window.MV_AUTOTRANSLATE=l; }
+    }
+  }catch(e){}
+})();
 </script>
 
 <style>
@@ -102,7 +130,11 @@
   .nav-links a{color:var(--muted);font-size:.92rem}
   .nav-links a:hover{color:var(--text)}
   .nav-cta{padding:10px 18px}
-  @media(max-width:880px){.nav-links{display:none}}
+  .langsw{display:inline-flex;gap:3px;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--bg-soft)}
+  .langsw a{font-size:.76rem;color:var(--muted);padding:4px 8px;border-radius:999px;line-height:1}
+  .langsw a:hover{color:var(--text)}
+  .langsw a.active{background:var(--gold);color:#1a1304;font-weight:700}
+  @media(max-width:880px){.nav-links>a:not(.nav-cta){display:none}}
 
   /* Hero */
   .hero{padding:84px 0 70px;background:radial-gradient(900px 480px at 78% -8%,rgba(201,162,74,.14),transparent 60%)}
@@ -236,7 +268,12 @@
       <a href="/blog/">Blog</a>
       <a href="/portfolio/">Portfólio</a>
       <a href="#faq">FAQ</a>
-      <a class="lang" href="/index-en.html" style="font-size:.82rem;color:var(--gold-soft);border:1px solid var(--line);padding:6px 12px;border-radius:999px">EN</a>
+      <span class="langsw">
+        <a href="/" class="active" data-l="pt">PT</a>
+        <a href="/index-en.html" data-l="en">EN</a>
+        <a href="/index-es.html" data-l="es">ES</a>
+        <a href="/index-fr.html" data-l="fr">FR</a>
+      </span>
       <a class="btn btn-gold nav-cta" href="#contato">Falar agora</a>
     </nav>
   </div>
@@ -385,7 +422,7 @@
     <div style="margin-top:38px">
       <p class="eyebrow" style="text-align:center">Alguns nomes para quem já interpretei</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:8px"><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-nasa-s-lead-statistical-engineer-peter-parker.jpg" alt="NASA" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">NASA</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-on-world-water-forum.jpg" alt="World Water Forum" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">World Water Forum</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-for-unescos-education-for-all-efa-global-coordination-sab.jpg" alt="UNESCO" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">UNESCO</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-for-world-health-organization.jpg" alt="OMS / WHO" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">OMS / WHO</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-a-conference-for-fao-food-and-agriculture-organization-of.jpg" alt="FAO · ONU" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">FAO · ONU</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/interpreting-for-the-brazilian-army-and-the-us-army.jpg" alt="Exército BR & US" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">Exército BR & US</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/translating-a-project-for-microsoft-from-english-to-portuguese.jpg" alt="Microsoft" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">Microsoft</span></a><a href="/portfolio/" style="position:relative;display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden"><img loading="lazy" src="/fotos/7th-international-conference-on-the-training-of-the-judiciary.jpg" alt="Judiciário" style="width:100%;height:118px;object-fit:cover;display:block"><span style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:.72rem;font-weight:600;padding:16px 8px 7px">Judiciário</span></a></div>
-      <div style="text-align:center;margin-top:26px"><a class="btn btn-gold" href="/portfolio/">Ver portfólio completo — 80 trabalhos →</a></div>
+      <div style="text-align:center;margin-top:26px"><a class="btn btn-gold" href="/portfolio/">Ver portfólio — uma amostra de 80+ missões →</a></div>
     </div>
   </div>
 </section>
@@ -396,6 +433,7 @@
     <p class="eyebrow center" style="text-align:center">O que dizem os clientes</p>
     <h2 class="center">Confiança comprovada por equipes internacionais</h2>
     <p class="lead center">Gestores de projetos, diretores de operações e equipes de comunicação global que trabalharam diretamente comigo (depoimentos no idioma original).</p>
+    <p class="center" style="color:var(--gold-soft);font-weight:600;margin-top:8px;letter-spacing:1px">★★★★★ &nbsp;5,0 · 13 avaliações de clientes</p>
     <div class="grid g3" style="margin-top:42px">
 
       <div class="card testi"><div class="stars">★★★★★</div><blockquote>"Marcos Maleval consistently delivered exceptional translation quality across complex technical documentation. His attention to detail, clear communication, and ability to meet demanding deadlines made him an invaluable extension of our international team. We would gladly collaborate with him again."</blockquote><div class="who"><b>Sarah Mitchell</b><span>International Project Manager · GlobalBridge Solutions</span></div></div>
@@ -578,6 +616,14 @@
 
 <a class="wa-float" href="https://wa.me/5584996200321">💬 WhatsApp</a>
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.langsw a').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('maleval_lang',a.getAttribute('data-l'));sessionStorage.setItem('maleval_auto','1');}catch(e){}});});
+if(window.MV_AUTOTRANSLATE){
+  var s=document.createElement('script');s.src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(s);
+  var d=document.createElement('div');d.id='google_translate_element';d.style.cssText='position:fixed;bottom:0;left:0;z-index:200';document.body.appendChild(d);
+  window.googleTranslateElementInit=function(){new google.translate.TranslateElement({pageLanguage:window.MV_LANG,autoDisplay:false},'google_translate_element');};
+}
+</script>
 </body>
 </html>
