@@ -41,6 +41,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html"/>
   </url>
+  <url><loc>https://maleval-traducoes.netlify.app/juridico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maleval-traducoes.netlify.app/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
