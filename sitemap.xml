@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maleval-traducoes.netlify.app/</loc>
+    <loc>https://malevaltraducoes.com.br/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://maleval-traducoes.netlify.app/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
   </url>
   <url>
-    <loc>https://maleval-traducoes.netlify.app/index-en.html</loc>
+    <loc>https://malevaltraducoes.com.br/index-en.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://maleval-traducoes.netlify.app/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
   </url>
   <url>
-    <loc>https://maleval-traducoes.netlify.app/index-es.html</loc>
+    <loc>https://malevaltraducoes.com.br/index-es.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://maleval-traducoes.netlify.app/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
   </url>
   <url>
-    <loc>https://maleval-traducoes.netlify.app/index-fr.html</loc>
+    <loc>https://malevaltraducoes.com.br/index-fr.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://maleval-traducoes.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://maleval-traducoes.netlify.app/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://maleval-traducoes.netlify.app/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://maleval-traducoes.netlify.app/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://maleval-traducoes.netlify.app/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
   </url>
-  <url><loc>https://maleval-traducoes.netlify.app/juridico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/juridico-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/oleo-gas-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/saude.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/saude-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/parceiros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/parceiros-en.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/traducao-juridica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/custo-erro-interpretacao-negociacoes.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/interpretacao-remota-rsi-conferencias.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://maleval-traducoes.netlify.app/blog/preparar-equipe-conferencia-multilingue.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/juridico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/juridico-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/oleo-gas-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/saude.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/saude-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/parceiros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/parceiros-en.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/traducao-juridica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/custo-erro-interpretacao-negociacoes.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/interpretacao-remota-rsi-conferencias.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://malevaltraducoes.com.br/blog/preparar-equipe-conferencia-multilingue.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
