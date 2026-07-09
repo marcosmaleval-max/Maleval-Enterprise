@@ -83,6 +83,13 @@
   status = 301
   force = true
 
+# Subdomínio Netlify antigo → domínio próprio (evita conteúdo duplicado no Google)
+[[redirects]]
+  from = "https://maleval-traducoes.netlify.app/*"
+  to = "https://malevaltraducoes.com.br/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "http://malevaltraducoes.com.br/*"
   to = "https://malevaltraducoes.com.br/:splat"
