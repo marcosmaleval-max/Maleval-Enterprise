@@ -1,0 +1,94 @@
+# Maleval Traduções — configuração Netlify
+# Site estático multi-página (sem build). Headers de segurança + cache.
+
+# ============================================================
+# HEADERS — segurança e performance
+# ============================================================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # CSP com allowlist do widget Google Translate (detecção de idioma do site).
+    # 'unsafe-inline' é necessário: o site usa CSS/JS inline por design (zero requests extras).
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://translate.google.com https://translate.googleapis.com https://translate-pa.googleapis.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://www.gstatic.com https://translate.googleapis.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com https://translate.google.com https://translate.googleapis.com https://www.google.com https://fonts.gstatic.com; connect-src 'self' https://translate.googleapis.com https://translate-pa.googleapis.com https://translate.google.com; frame-src https://translate.googleapis.com https://translate.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+
+# HTML sempre revalidado (conteúdo pode mudar a cada deploy)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Imagens e ícones — cache de 1 semana (mudam raramente)
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/fotos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Lead magnet PDF — 1 dia
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+# ============================================================
+# REDIRECTS — ativos apenas quando o domínio próprio apontar
+# para o Netlify (não afetam o subdomínio *.netlify.app)
+# ============================================================
+
+[[redirects]]
+  from = "https://www.malevaltraducoes.com.br/*"
+  to = "https://malevaltraducoes.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://malevaltraducoes.com.br/*"
+  to = "https://malevaltraducoes.com.br/:splat"
+  status = 301
+  force = true
+
+# 404: Netlify serve /404.html automaticamente para rotas inexistentes.
+# NÃO adicionar fallback "/* -> /index.html" — site multi-página, isso
+# criaria soft-404 (toda URL errada devolveria a home com status 200).
