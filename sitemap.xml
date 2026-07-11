@@ -1,82 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://malevaltraducoes.com.br/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
-  </url>
-  <url>
-    <loc>https://malevaltraducoes.com.br/index-en.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
-  </url>
-  <url>
-    <loc>https://malevaltraducoes.com.br/index-es.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
-  </url>
-  <url>
-    <loc>https://malevaltraducoes.com.br/index-fr.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
-  </url>
-  <url><loc>https://malevaltraducoes.com.br/juridico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/juridico-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/oleo-gas-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/saude.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/saude-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url>
-    <loc>https://malevaltraducoes.com.br/rsi.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/rsi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/rsi-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/rsi-en.html"/>
-  </url>
-  <url>
-    <loc>https://malevaltraducoes.com.br/rsi-en.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/rsi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/rsi-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/rsi-en.html"/>
-  </url>
-  <url><loc>https://malevaltraducoes.com.br/tradutor-interprete-natal.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/interpretacao-eventos-nordeste.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/glossario-arbitragem.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/glossario-saude.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/glossario-oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/parceiros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/parceiros-en.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/traducao-juridica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/custo-erro-interpretacao-negociacoes.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/interpretacao-remota-rsi-conferencias.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/preparar-equipe-conferencia-multilingue.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://malevaltraducoes.com.br/blog/hiring-portuguese-interpreter-brazil.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://malevaltraducoes.com.br/</loc>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+<xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
+</url>
+<url>
+<loc>https://malevaltraducoes.com.br/index-en.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+<xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
+</url>
+<url>
+<loc>https://malevaltraducoes.com.br/index-es.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+<xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
+</url>
+<url>
+<loc>https://malevaltraducoes.com.br/index-fr.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/index-en.html"/>
+<xhtml:link rel="alternate" hreflang="es" href="https://malevaltraducoes.com.br/index-es.html"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://malevaltraducoes.com.br/index-fr.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/index-en.html"/>
+</url>
+<url><loc>https://malevaltraducoes.com.br/juridico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/juridico-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/oleo-gas-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/saude.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/saude-en.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/diplomatico-defesa.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/interpretacao-simultanea.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/interpretacao-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/traducao-tecnica.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/localizacao-corporativa.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url>
+<loc>https://malevaltraducoes.com.br/rsi.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/rsi.html"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/rsi-en.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/rsi-en.html"/>
+</url>
+<url>
+<loc>https://malevaltraducoes.com.br/rsi-en.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+<xhtml:link rel="alternate" hreflang="pt-BR" href="https://malevaltraducoes.com.br/rsi.html"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://malevaltraducoes.com.br/rsi-en.html"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://malevaltraducoes.com.br/rsi-en.html"/>
+</url>
+<url><loc>https://malevaltraducoes.com.br/tradutor-interprete-natal.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://malevaltraducoes.com.br/interpretacao-eventos-nordeste.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/glossario-arbitragem.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/glossario-saude.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/glossario-oleo-gas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/parceiros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/parceiros-en.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://malevaltraducoes.com.br/portfolio/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/como-contratar-interprete-conferencia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/interpretacao-simultanea-vs-consecutiva.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/traducao-juridica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/custo-erro-interpretacao-negociacoes.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/interpretacao-remota-rsi-conferencias.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/preparar-equipe-conferencia-multilingue.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://malevaltraducoes.com.br/blog/hiring-portuguese-interpreter-brazil.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
