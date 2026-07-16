@@ -4,7 +4,7 @@ Site oficial: **[malevaltraducoes.com.br](https://malevaltraducoes.com.br/)**
 
 Tradução e interpretação profissional — Natal/RN, Brasil · atendimento presencial e remoto (RSI) para todo o Brasil e exterior.
 
-**Marcos Maleval** — tradutor e intérprete de conferências com mais de 20 anos de experiência. Interpretação simultânea e consecutiva (PT · EN · ES · FR) e tradução técnica, jurídica, médica e editorial (também IT · DE · ZH).
+**Marcos Maleval** — tradutor e intérprete de conferências com mais de 25 anos de experiência. Interpretação simultânea e consecutiva (PT · EN · ES · FR) e tradução técnica, jurídica, médica e editorial (também IT · DE · ZH).
 
 ## Páginas principais
 
