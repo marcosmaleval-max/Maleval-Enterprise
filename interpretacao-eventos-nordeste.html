@@ -354,13 +354,13 @@
         <input type="hidden" name="form-name" value="orcamento-nordeste" />
         <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
         <label>Nome</label>
-        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="text" name="name" placeholder="Seu nome" required />
         <label>E-mail</label>
         <input type="email" name="email" placeholder="seu@email.com" required />
         <label>Empresa / Organização</label>
-        <input type="text" name="empresa" placeholder="Nome da empresa ou organização" />
+        <input type="text" name="company" placeholder="Nome da empresa ou organização" />
         <label>Cidade do evento</label>
-        <select name="cidade" required>
+        <select name="city" required>
           <option value="">Selecione…</option>
           <option>Recife</option>
           <option>Fortaleza</option>
@@ -375,7 +375,7 @@
           <option>Evento online / híbrido</option>
         </select>
         <label>Formato</label>
-        <select name="formato">
+        <select name="format">
           <option value="">Selecione…</option>
           <option>Congresso / conferência</option>
           <option>Evento corporativo / treinamento</option>
@@ -385,7 +385,8 @@
           <option>Outro</option>
         </select>
         <label>Detalhes do evento</label>
-        <textarea name="detalhes" rows="4" placeholder="Data, duração, idiomas, nº de participantes…"></textarea>
+        <textarea name="details" rows="4" placeholder="Data, duração, idiomas, nº de participantes…"></textarea>
+        <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">Este formulário é exclusivo para <strong>solicitação de orçamento</strong>. Não recebemos candidaturas, currículos nem ofertas de prestadores de serviço.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Solicitar proposta em 24h</button>
         <small style="color:var(--muted)">Sua solicitação é enviada diretamente para mim e tratada com confidencialidade.</small>
       </form>

@@ -370,13 +370,13 @@
         <input type="hidden" name="form-name" value="quote-rsi-en" />
         <p hidden><label>Do not fill: <input name="bot-field" /></label></p>
         <label>Name</label>
-        <input type="text" name="nome" placeholder="Your name" required />
+        <input type="text" name="name" placeholder="Your name" required />
         <label>Email</label>
         <input type="email" name="email" placeholder="you@email.com" required />
         <label>Company / Organization</label>
-        <input type="text" name="empresa" placeholder="Company or organization name" />
+        <input type="text" name="company" placeholder="Company or organization name" />
         <label>Event format</label>
-        <select name="formato" required>
+        <select name="format" required>
           <option value="">Select…</option>
           <option>Online conference / congress</option>
           <option>Hybrid event (on-site + online)</option>
@@ -386,7 +386,7 @@
           <option>Other / not sure yet</option>
         </select>
         <label>Language pair</label>
-        <select name="idiomas">
+        <select name="languages">
           <option value="">Select…</option>
           <option>Portuguese ⇄ English</option>
           <option>Portuguese ⇄ Spanish</option>
@@ -394,7 +394,8 @@
           <option>Other combination</option>
         </select>
         <label>Event details</label>
-        <textarea name="detalhes" rows="4" placeholder="Date, duration, platform (if chosen), number of participants…"></textarea>
+        <textarea name="details" rows="4" placeholder="Date, duration, platform (if chosen), number of participants…"></textarea>
+        <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">This form is for <strong>service enquiries only</strong>. We do not accept job applications, CVs or vendor offers.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Request a proposal within 24h</button>
         <small style="color:var(--muted)">Your request goes directly to me and is handled with confidentiality.</small>
       </form>

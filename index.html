@@ -456,7 +456,7 @@ window.MV_LANG='pt';
       <form name="lead-magnet" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="lead-magnet" />
         <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
-        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="text" name="name" placeholder="Seu nome" required />
         <input type="email" name="email" placeholder="Seu melhor e-mail" required />
         <button class="btn btn-gold" type="submit" style="justify-content:center">Quero o guia gratuito</button>
         <small>Sem spam. Você recebe o guia na hora e dicas ocasionais sobre comunicação internacional. Cancele quando quiser.</small>
@@ -723,11 +723,13 @@ window.MV_LANG='pt';
         <input type="hidden" name="form-name" value="orcamento" />
         <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
         <label>Nome</label>
-        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="text" name="name" placeholder="Seu nome" required />
         <label>E-mail</label>
         <input type="email" name="email" placeholder="seu@email.com" required />
+        <label>Empresa / Organização</label>
+        <input type="text" name="company" placeholder="Nome da empresa ou instituição (se aplicável)" />
         <label>Serviço</label>
-        <select name="servico" required>
+        <select name="service" required>
           <option value="">Selecione…</option>
           <option>Interpretação simultânea / RSI</option>
           <option>Interpretação consecutiva</option>
@@ -736,7 +738,7 @@ window.MV_LANG='pt';
           <option>Outro / não tenho certeza</option>
         </select>
         <label>Par de idiomas</label>
-        <select name="idiomas">
+        <select name="languages">
           <option value="">Selecione…</option>
           <option>Português ⇄ Inglês</option>
           <option>Português ⇄ Espanhol</option>
@@ -747,7 +749,8 @@ window.MV_LANG='pt';
           <option>Outra combinação</option>
         </select>
         <label>Detalhes do projeto</label>
-        <textarea name="detalhes" rows="4" placeholder="Data, tipo de evento ou documento, número de horas/páginas…"></textarea>
+        <textarea name="details" rows="4" placeholder="Data, tipo de evento ou documento, número de horas/páginas…"></textarea>
+        <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">Este formulário é exclusivo para <strong>solicitação de orçamento</strong>. Não recebemos candidaturas, currículos nem ofertas de prestadores de serviço.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Solicitar proposta em 24h</button>
         <small style="color:var(--muted)">Sua solicitação é enviada diretamente para mim. Respondo o quanto antes.</small>
       </form>
