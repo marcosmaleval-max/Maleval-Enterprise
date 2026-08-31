@@ -346,13 +346,13 @@
         <input type="hidden" name="form-name" value="orcamento-energia" />
         <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
         <label>Nome</label>
-        <input type="text" name="name" placeholder="Seu nome" required />
+        <input aria-label="Nome" type="text" name="name" placeholder="Seu nome" required />
         <label>E-mail</label>
-        <input type="email" name="email" placeholder="seu@email.com" required />
+        <input aria-label="E-mail" type="email" name="email" placeholder="seu@email.com" required />
         <label>Empresa</label>
-        <input type="text" name="company" placeholder="Nome da empresa" />
+        <input aria-label="Empresa" type="text" name="company" placeholder="Nome da empresa" />
         <label>Tipo de demanda</label>
-        <select name="request" required>
+        <select aria-label="Tipo de demanda" name="request" required>
           <option value="">Selecione…</option>
           <option>Reunião técnica / auditoria</option>
           <option>Treinamento / HSE / segurança</option>
@@ -362,7 +362,7 @@
           <option>Outro / não tenho certeza</option>
         </select>
         <label>Par de idiomas</label>
-        <select name="languages">
+        <select aria-label="Par de idiomas" name="languages">
           <option value="">Selecione…</option>
           <option>Português ⇄ Inglês</option>
           <option>Português ⇄ Espanhol</option>
@@ -370,7 +370,7 @@
           <option>Outra combinação</option>
         </select>
         <label>Detalhes do projeto</label>
-        <textarea name="details" rows="4" placeholder="Data, tipo de atividade, local (ou remoto), nº de horas/páginas, prazo…"></textarea>
+        <textarea aria-label="Detalhes do projeto" name="details" rows="4" placeholder="Data, tipo de atividade, local (ou remoto), nº de horas/páginas, prazo…"></textarea>
         <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">Este formulário é exclusivo para <strong>solicitação de orçamento</strong>. Não recebemos candidaturas, currículos nem ofertas de prestadores de serviço.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Solicitar proposta em 24h</button>
         <small style="color:var(--muted)">Sua solicitação é enviada diretamente para mim e tratada com confidencialidade.</small>

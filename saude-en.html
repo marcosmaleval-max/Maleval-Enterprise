@@ -346,13 +346,13 @@
         <input type="hidden" name="form-name" value="quote-health" />
         <p hidden><label>Do not fill: <input name="bot-field" /></label></p>
         <label>Name</label>
-        <input type="text" name="name" placeholder="Your name" required />
+        <input aria-label="Name" type="text" name="name" placeholder="Your name" required />
         <label>Email</label>
-        <input type="email" name="email" placeholder="you@email.com" required />
+        <input aria-label="Email" type="email" name="email" placeholder="you@email.com" required />
         <label>Institution / Company</label>
-        <input type="text" name="company" placeholder="Hospital, lab, medical society, company…" />
+        <input aria-label="Institution / Company" type="text" name="company" placeholder="Hospital, lab, medical society, company…" />
         <label>Type of request</label>
-        <select name="request" required>
+        <select aria-label="Type of request" name="request" required>
           <option value="">Select…</option>
           <option>Medical congress / conference (RSI or on-site)</option>
           <option>Clinical research / regulatory (ANVISA/FDA)</option>
@@ -363,7 +363,7 @@
           <option>Other / not sure</option>
         </select>
         <label>Language pair</label>
-        <select name="languages">
+        <select aria-label="Language pair" name="languages">
           <option value="">Select…</option>
           <option>Portuguese ⇄ English</option>
           <option>Portuguese ⇄ Spanish</option>
@@ -371,7 +371,7 @@
           <option>Other combination</option>
         </select>
         <label>Details</label>
-        <textarea name="details" rows="4" placeholder="Date, specialty, type of event or document, number of hours/pages, deadline…"></textarea>
+        <textarea aria-label="Details" name="details" rows="4" placeholder="Date, specialty, type of event or document, number of hours/pages, deadline…"></textarea>
         <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">This form is for <strong>service enquiries only</strong>. We do not accept job applications, CVs or vendor offers.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Request a proposal in 24h</button>
         <small style="color:var(--muted)">Your request comes directly to me and is treated in strict confidence.</small>

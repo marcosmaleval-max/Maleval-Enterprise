@@ -274,8 +274,8 @@ window.MV_LANG='es';
       <form name="lead-magnet-es" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="lead-magnet-es" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
-        <input type="text" name="name" placeholder="Su nombre" required />
-        <input type="email" name="email" placeholder="Su mejor correo electrónico" required />
+        <input aria-label="Su nombre" type="text" name="name" placeholder="Su nombre" required />
+        <input aria-label="Su mejor correo electrónico" type="email" name="email" placeholder="Su mejor correo electrónico" required />
         <button class="btn btn-gold" type="submit" style="justify-content:center">Quiero la guía gratuita</button>
         <small>Sin spam. Recibe la guía al instante, además de consejos ocasionales sobre comunicación internacional. Cancele cuando quiera.</small>
       </form>
@@ -467,13 +467,13 @@ window.MV_LANG='es';
         <input type="hidden" name="form-name" value="quote-es" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
         <label>Nombre</label>
-        <input type="text" name="name" placeholder="Su nombre" required />
+        <input aria-label="Nombre" type="text" name="name" placeholder="Su nombre" required />
         <label>Correo electrónico</label>
-        <input type="email" name="email" placeholder="usted@email.com" required />
+        <input aria-label="Correo electrónico" type="email" name="email" placeholder="usted@email.com" required />
         <label>Empresa / Organización</label>
-        <input type="text" name="company" placeholder="Nombre de la empresa o institución (si corresponde)" />
+        <input aria-label="Empresa / Organización" type="text" name="company" placeholder="Nombre de la empresa o institución (si corresponde)" />
         <label>Servicio</label>
-        <select name="service" required>
+        <select aria-label="Servicio" name="service" required>
           <option value="">Seleccione…</option>
           <option>Interpretación simultánea / RSI</option>
           <option>Interpretación consecutiva</option>
@@ -481,18 +481,17 @@ window.MV_LANG='es';
           <option>Otro / no estoy seguro</option>
         </select>
         <label>Par de idiomas</label>
-        <select name="languages">
+        <select aria-label="Par de idiomas" name="languages">
           <option value="">Seleccione…</option>
           <option>Portugués ⇄ Inglés</option>
           <option>Portugués ⇄ Español</option>
           <option>Portugués ⇄ Francés</option>
           <option>Mandarín (traducción)</option>
           <option>Neerlandés (traducción)</option>
-          <option>Mandarín (traducción)</option>
           <option>Otra combinación</option>
         </select>
         <label>Detalles del proyecto</label>
-        <textarea name="details" rows="4" placeholder="Fecha, tipo de evento o documento, número de horas/páginas…"></textarea>
+        <textarea aria-label="Detalles del proyecto" name="details" rows="4" placeholder="Fecha, tipo de evento o documento, número de horas/páginas…"></textarea>
         <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">Este formulario es exclusivo para <strong>solicitudes de presupuesto</strong>. No aceptamos candidaturas, currículums ni ofertas de proveedores.</p>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Solicitar una propuesta en 24h</button>
         <small style="color:var(--muted)">Su solicitud llega directamente a mí. Responderé lo antes posible.</small>
