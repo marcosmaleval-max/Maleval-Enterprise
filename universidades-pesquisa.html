@@ -58,7 +58,7 @@
 {"@type":"Question","name":"Traduzem convênios, editais e artigos científicos?","acceptedAnswer":{"@type":"Answer","text":"Sim. Traduzo convênios de cooperação, editais bilaterais, resumos e artigos científicos entre português, inglês, espanhol e francês, com preparação prévia da terminologia da área."}},
 {"@type":"Question","name":"Como é feita a preparação terminológica antes do evento?","acceptedAnswer":{"@type":"Answer","text":"Preparo glossário e terminologia específicos da área com base no material do evento e alinho com a equipe antes do congresso, seminário ou banca, para precisão total."}},
 {"@type":"Question","name":"Atendem presencialmente e remotamente?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendimento presencial em Natal/RN e no Nordeste e interpretação remota (RSI) via plataformas profissionais como KUDO e Interprefy."}},
-{"@type":"Question","name":"Quais idiomas estão disponíveis?","acceptedAnswer":{"@type":"Answer","text":"Interpretação entre português, inglês, espanhol e francês. Tradução também em italiano, alemão e mandarim."}}
+{"@type":"Question","name":"Quais idiomas estão disponíveis?","acceptedAnswer":{"@type":"Answer","text":"Interpretação entre português, inglês, espanhol e francês. Tradução também em mandarim e neerlandês."}}
 ]
 }
 </script>
@@ -211,7 +211,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <div class="wrap">
 <p class="eyebrow">Universidades · Institutos · Pós-graduação &amp; Cooperação Internacional</p>
 <h1>Da mobilidade internacional ao congresso científico, sua instituição <em>fala o idioma do mundo</em>.</h1>
-<p class="lead">Para universidades, institutos e programas de pós-graduação com cooperação e produção internacional. Mais de 25 anos interpretando em eventos técnico-científicos — com base em Natal/RN e atuação presencial no Nordeste e remota no mundo.</p>
+<p class="lead">Para universidades, institutos e programas de pós-graduação com cooperação e produção internacional. Interpretando desde 1999 em eventos técnico-científicos — com base em Natal/RN e atuação presencial no Nordeste e remota no mundo.</p>
 <div class="hero-cta">
 <a class="btn btn-gold" href="#contato">Planejar apoio ao próximo evento</a>
 <a class="btn btn-ghost" href="https://wa.me/5584996200321">💬 Falar no WhatsApp</a>
@@ -228,9 +228,9 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 
 <div class="trust">
 <div class="wrap trust-grid">
-<div class="trust-item"><span class="dot"></span><b>+25 anos</b> em eventos técnico-científicos</div>
+<div class="trust-item"><span class="dot"></span><b>Desde 1999</b> em eventos técnico-científicos</div>
 <div class="trust-item"><span class="dot"></span><b>Base em Natal/RN</b> · presença no Nordeste</div>
-<div class="trust-item"><span class="dot"></span><b>Mestrado</b> (Linguística Aplicada) · certificação <b>C2</b></div>
+<div class="trust-item"><span class="dot"></span><b>Especialização em Tradução</b> · certificação <b>C2</b></div>
 <div class="trust-item"><span class="dot"></span>Credenciais <b>KUDO Pro · Interprefy</b></div>
 <div class="trust-item"><span class="dot"></span>Preparação prévia de <b>glossário &amp; terminologia</b></div>
 </div>
@@ -292,7 +292,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <details><summary>Traduzem convênios, editais e artigos científicos?</summary><p>Sim. Traduzo convênios de cooperação, editais bilaterais, resumos e artigos científicos entre português, inglês, espanhol e francês, com preparação prévia da terminologia da área.</p></details>
 <details><summary>Como é feita a preparação terminológica antes do evento?</summary><p>Preparo glossário e terminologia específicos da área com base no material do evento e alinho com a equipe antes do congresso, seminário ou banca, para precisão total.</p></details>
 <details><summary>Atendem presencialmente e remotamente?</summary><p>Sim. Atendimento presencial em Natal/RN e no Nordeste e interpretação remota (RSI) via plataformas profissionais como KUDO e Interprefy.</p></details>
-<details><summary>Quais idiomas estão disponíveis?</summary><p>Interpretação entre português, inglês, espanhol e francês. Tradução também em italiano, alemão e mandarim.</p></details>
+<details><summary>Quais idiomas estão disponíveis?</summary><p>Interpretação entre português, inglês, espanhol e francês. Tradução também em mandarim e neerlandês.</p></details>
 </div>
 </div>
 </section>
@@ -326,13 +326,13 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <input type="hidden" name="form-name" value="orcamento-universidades" />
 <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
 <label>Nome</label>
-<input type="text" name="name" placeholder="Seu nome" required />
+<input aria-label="Nome" type="text" name="name" placeholder="Seu nome" required />
 <label>E-mail</label>
-<input type="email" name="email" placeholder="seu@email.com" required />
+<input aria-label="E-mail" type="email" name="email" placeholder="seu@email.com" required />
 <label>Instituição / Programa</label>
-<input type="text" name="company" placeholder="Universidade, instituto, programa de pós…" />
+<input aria-label="Instituição / Programa" type="text" name="company" placeholder="Universidade, instituto, programa de pós…" />
 <label>Tipo de demanda</label>
-<select name="request" required>
+<select aria-label="Tipo de demanda" name="request" required>
 <option value="">Selecione…</option>
 <option>Congresso / seminário (presencial ou RSI)</option>
 <option>Banca / defesa com membro estrangeiro</option>
@@ -342,7 +342,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <option>Outro / não tenho certeza</option>
 </select>
 <label>Par de idiomas</label>
-<select name="languages">
+<select aria-label="Par de idiomas" name="languages">
 <option value="">Selecione…</option>
 <option>Português ⇄ Inglês</option>
 <option>Português ⇄ Espanhol</option>
@@ -350,7 +350,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <option>Outra combinação</option>
 </select>
 <label>Detalhes</label>
-<textarea name="details" rows="4" placeholder="Data, área/tema, tipo de evento ou documento, nº de horas/páginas, prazo…"></textarea>
+<textarea aria-label="Detalhes" name="details" rows="4" placeholder="Data, área/tema, tipo de evento ou documento, nº de horas/páginas, prazo…"></textarea>
 <p style="font-size:.82rem;color:var(--muted);margin:10px 0 2px;line-height:1.45;border-left:2px solid var(--gold);padding-left:10px">Este formulário é exclusivo para <strong>solicitação de orçamento</strong>. Não recebemos candidaturas, currículos nem ofertas de prestadores de serviço.</p>
 <button class="btn btn-gold" type="submit" style="justify-content:center">Solicitar proposta em 24h</button>
 <small style="color:var(--muted)">Sua solicitação é enviada diretamente para mim e tratada com sigilo.</small>

@@ -99,3 +99,70 @@
 # 404: Netlify serve /404.html automaticamente para rotas inexistentes.
 # NÃO adicionar fallback "/* -> /index.html" — site multi-página, isso
 # criaria soft-404 (toda URL errada devolveria a home com status 200).
+
+
+# ------------------------------------------------------------
+# CANONICALIZACAO — resolvida por canonical unico, SEM redirect
+#
+# Medido em 31/08/2026: 5 paginas comerciais viviam em duas URLs
+# 200 simultaneas (/interpretacao-simultanea e a mesma com .html),
+# sem 301 entre elas, diluindo sinal de SEO.
+#
+# Criterio do Chairman: URL canonica unica > redirect 301 > duas
+# URLs concorrentes. Os tres testes passaram:
+#   1. a versao .html e a unica referenciada internamente (18 links
+#      com .html, ZERO sem)
+#   2. canonical e sitemap apontam ambos para .html nas 5 paginas
+#   3. nenhum link interno gera mais a URL duplicada
+#
+# Logo, nao ha 301 a criar: menos codigo, menos processamento,
+# nenhuma cadeia de redirects, menor custo de manutencao.
+# Residual conhecido: as URLs sem .html continuam devolvendo 200 e
+# podem estar indexadas; a consolidacao fica a cargo da tag
+# canonical, que agora e consistente nas 5.
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# CANONICALIZACAO — 5 URLs historicas sem .html
+#
+# Medido 31/08/2026: essas 5 paginas comerciais viviam em DUAS
+# URLs 200 simultaneas, sem 301 entre elas, diluindo sinal de SEO.
+# Convencao da casa e .html (34 das 41 entradas do sitemap; 807
+# links internos). Canonical e sitemap das 5 foram alinhados a .html.
+#
+# Arquitetura resultante:
+#   URL historica sem .html  -> 301 -> URL canonica .html
+#   link interno             -> URL .html diretamente (zero saltos)
+#
+# Canonical orienta buscador, mas nao impede o acesso a URL antiga;
+# o 301 resolve a entrada externa e transfere o sinal.
+#
+# Caminhos NOMEADOS, nunca curinga: "/* -> /:splat.html" mascararia
+# 404 legitimo, como adverte a nota do 404 acima. Sem cadeia: cada
+# origem aponta direto ao destino final.
+# ------------------------------------------------------------
+
+[[redirects]]
+  from = "/diplomatico-defesa"
+  to = "/diplomatico-defesa.html"
+  status = 301
+
+[[redirects]]
+  from = "/interpretacao-simultanea"
+  to = "/interpretacao-simultanea.html"
+  status = 301
+
+[[redirects]]
+  from = "/interpretacao-consecutiva"
+  to = "/interpretacao-consecutiva.html"
+  status = 301
+
+[[redirects]]
+  from = "/traducao-tecnica"
+  to = "/traducao-tecnica.html"
+  status = 301
+
+[[redirects]]
+  from = "/localizacao-corporativa"
+  to = "/localizacao-corporativa.html"
+  status = 301
