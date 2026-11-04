@@ -166,3 +166,9 @@
   from = "/localizacao-corporativa"
   to = "/localizacao-corporativa.html"
   status = 301
+
+# 04/11/2026: /servicos.html respondia 404 (URL antiga em circulacao); aponta para a pagina de traducao tecnica.
+[[redirects]]
+  from = "/servicos.html"
+  to = "/traducao-tecnica.html"
+  status = 301
