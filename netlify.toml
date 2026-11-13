@@ -187,3 +187,25 @@
   from = "/servicos.html"
   to = "/traducao-tecnica.html"
   status = 301
+
+# 13/11/2026: enderecos curtos que respondiam 404 (medido por curl). Nao existe arquivo nesses caminhos,
+# entao o redirect comum funciona (diferente dos 5 inertes documentados acima).
+[[redirects]]
+  from = "/servicos"
+  to = "/traducao-tecnica.html"
+  status = 301
+
+[[redirects]]
+  from = "/credenciais"
+  to = "/sobre.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/#faq"
+  status = 301
+
+[[redirects]]
+  from = "/pt"
+  to = "/"
+  status = 301
