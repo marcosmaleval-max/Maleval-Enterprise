@@ -167,6 +167,21 @@
   to = "/localizacao-corporativa.html"
   status = 301
 
+# ------------------------------------------------------------
+# MEDIDO EM 13/11/2026 (curl ao vivo + Search Console):
+# os 5 redirects acima estao INERTES. /interpretacao-simultanea e as
+# demais URLs sem .html respondem 200, porque o Netlify serve o
+# arquivo .html nesse caminho e regra sem "force = true" nao se
+# sobrepoe a conteudo existente. O mesmo vale para todas as paginas
+# (/rsi-en, /oleo-gas-en, /glossario-oleo-gas...).
+# A consolidacao esta sendo feita pela tag canonical, e funciona:
+# o Search Console lista 10 URLs como "pagina alternativa com tag
+# canonica adequada".
+# NAO acrescentar "force = true" sem testar antes num deploy de
+# previa: redirect forcado de /x para /x.html pode entrar em loop
+# com a normalizacao de URL do Netlify.
+# ------------------------------------------------------------
+
 # 04/11/2026: /servicos.html respondia 404 (URL antiga em circulacao); aponta para a pagina de traducao tecnica.
 [[redirects]]
   from = "/servicos.html"
