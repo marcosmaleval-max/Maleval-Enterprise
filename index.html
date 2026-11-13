@@ -145,17 +145,13 @@ window.MV_LANG='pt';
 (function(){
   var SUP={pt:'/',en:'/index-en.html',es:'/index-es.html',fr:'/index-fr.html'};
   var CUR=window.MV_LANG;
-  try{
-    if(/(?:bot[\/;) ]|bot$|crawl|spider|slurp|google-|googleother|mediapartners|lighthouse|pagespeed|headless|facebookexternalhit|whatsapp\/)/i.test(navigator.userAgent)) return; /* 13/11/2026: robos nunca sao redirecionados por idioma. Causa medida no Search Console: a home PT estava fora do indice como "pagina com redirecionamento". */
-    var pref=localStorage.getItem('maleval_lang');
-    if(pref&&SUP[pref]){ if(pref!==CUR) location.replace(SUP[pref]); return; }
-    if(!sessionStorage.getItem('maleval_auto')){
-      sessionStorage.setItem('maleval_auto','1');
-      var l=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase().slice(0,2);
-      if(SUP[l]){ if(l!==CUR) location.replace(SUP[l]); }
-      else { document.cookie='googtrans=/'+CUR+'/'+l+';path=/'; window.MV_AUTOTRANSLATE=l; }
-    }
-  }catch(e){}
+  /* 13/11/2026: nenhum redirecionamento automatico por idioma. O antigo tirava a home em portugues do indice do Google ("pagina com redirecionamento", medido no Search Console). A pagina sempre carrega no proprio idioma; se o navegador (ou uma escolha anterior do visitante) indicar outro idioma disponivel, uma barra discreta oferece a troca. */
+  function mvGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  var pref=mvGet('maleval_lang');
+  var l=((navigator.languages&&navigator.languages[0])||navigator.language||'en').toLowerCase().slice(0,2);
+  var want=(pref&&SUP[pref])?pref:(SUP[l]?l:null);
+  if(want){ if(want!==CUR&&!mvGet('maleval_suggest_off')) window.MV_SUGGEST=want; }
+  else { try{ if(!sessionStorage.getItem('maleval_auto')){ sessionStorage.setItem('maleval_auto','1'); document.cookie='googtrans=/'+CUR+'/'+l+';path=/'; window.MV_AUTOTRANSLATE=l; } }catch(e){} }
 })();
 </script>
 
@@ -847,6 +843,21 @@ window.MV_LANG='pt';
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
 document.querySelectorAll('.langsw a').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('maleval_lang',a.getAttribute('data-l'));sessionStorage.setItem('maleval_auto','1');}catch(e){}});});
+if(window.MV_SUGGEST){(function(s){
+  var T={pt:['Esta página está disponível em português. Quer mudar?','Mudar para português','Sugestão de idioma','Fechar'],en:['This page is available in English. Would you like to switch?','Switch to English','Language suggestion','Close'],es:['Esta página está disponible en español. ¿Desea cambiar?','Cambiar a español','Sugerencia de idioma','Cerrar'],fr:['Cette page est disponible en français. Souhaitez-vous changer ?','Passer au français','Suggestion de langue','Fermer']};
+  var U={pt:'/',en:'/index-en.html',es:'/index-es.html',fr:'/index-fr.html'};
+  if(!T[s]) return;
+  var b=document.createElement('div'); b.id='mv-lang-suggest'; b.setAttribute('role','region'); b.setAttribute('aria-label',T[s][2]); b.lang=s;
+  b.style.cssText='position:fixed;left:16px;bottom:'+(window.innerWidth<700?'78px':'20px')+';z-index:79;max-width:min(430px,calc(100vw - 32px));background:#16203a;border:1px solid #26324d;border-radius:12px;color:#e8ecf4;font-size:.9rem;line-height:1.45;padding:12px 40px 12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.4)';
+  var t=document.createElement('span'); t.textContent=T[s][0]+' ';
+  var a=document.createElement('a'); a.href=U[s]; a.textContent=T[s][1]+' →'; a.style.cssText='color:#d9b977;font-weight:700;text-decoration:underline;white-space:nowrap';
+  a.addEventListener('click',function(){ try{localStorage.setItem('maleval_lang',s);}catch(e){} });
+  var x=document.createElement('button'); x.type='button'; x.setAttribute('aria-label',T[s][3]); x.textContent='×';
+  x.style.cssText='position:absolute;right:8px;top:6px;background:none;border:0;color:#9aa6bd;font-size:1.3rem;cursor:pointer;line-height:1;padding:4px 6px';
+  x.addEventListener('click',function(){ try{localStorage.setItem('maleval_suggest_off','1');}catch(e){} if(b.parentNode) b.parentNode.removeChild(b); });
+  b.appendChild(t); b.appendChild(a); b.appendChild(x);
+  document.body.appendChild(b);
+})(window.MV_SUGGEST);}
 if(window.MV_AUTOTRANSLATE){
   var s=document.createElement('script');s.src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(s);
   var d=document.createElement('div');d.id='google_translate_element';d.style.cssText='position:fixed;bottom:0;left:0;z-index:200';document.body.appendChild(d);
