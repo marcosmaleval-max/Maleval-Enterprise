@@ -164,7 +164,12 @@
   details p{color:var(--muted);margin-top:12px;font-size:.94rem}
 
   .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
-  @media(max-width:880px){.contact{grid-template-columns:1fr}}
+  @media(max-width:880px){.contact{grid-template-columns:minmax(0,1fr)}}
+  /* Layout movel 23/11/2026: nenhum bloco mais largo que a tela */
+  .foot-links{flex-wrap:wrap}
+  .contact-info a{overflow-wrap:anywhere}
+  @media(max-width:600px){.btn:not(.nav-cta){white-space:normal;text-align:center}.nav-links{gap:10px}}
+  @media(max-width:400px){.nav-links{gap:6px}.nav-links .nav-cta{padding:8px 11px;font-size:.84rem}.langsw a{padding:4px 5px}}
   .contact-info a{display:flex;align-items:center;gap:11px;color:var(--text);padding:11px 0;border-bottom:1px solid var(--line);font-size:.96rem}
   .contact-info a:hover{color:var(--gold)}
   .promise{margin-top:20px;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--gold-soft);font-size:.9rem}
@@ -331,8 +336,9 @@
         <div class="promise">⏱️ Response within 1 business day · strict confidentiality and NDA on request · on-site in Natal/Brazil and remote worldwide.</div>
       </div>
 
-      <form class="full" name="quote-energy" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
+      <form class="full" name="quote-energy" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quote-energy" />
+        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento | %{formName} | %{submissionId}" />
         <p hidden><label>Do not fill: <input name="bot-field" /></label></p>
         <label>Name</label>
         <input aria-label="Name" type="text" name="name" placeholder="Your name" required />
@@ -354,8 +360,12 @@
         <select aria-label="Language pair" name="languages">
           <option value="">Select…</option>
           <option>Portuguese ⇄ English</option>
+          <option>English → Portuguese</option>
           <option>Portuguese ⇄ Spanish</option>
+          <option>English → Spanish</option>
           <option>Portuguese ⇄ French</option>
+          <option>Several combinations</option>
+          <option>Other pair (on request)</option>
           <option>Other combination</option>
         </select>
         <label>Project details</label>

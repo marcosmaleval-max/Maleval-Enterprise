@@ -170,7 +170,12 @@
   details p{color:var(--muted);margin-top:12px;font-size:.94rem}
 
   .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
-  @media(max-width:880px){.contact{grid-template-columns:1fr}}
+  @media(max-width:880px){.contact{grid-template-columns:minmax(0,1fr)}}
+  /* Layout movel 23/11/2026: nenhum bloco mais largo que a tela */
+  .foot-links{flex-wrap:wrap}
+  .contact-info a{overflow-wrap:anywhere}
+  @media(max-width:600px){.btn:not(.nav-cta){white-space:normal;text-align:center}.nav-links{gap:10px}}
+  @media(max-width:400px){.nav-links{gap:6px}.nav-links .nav-cta{padding:8px 11px;font-size:.84rem}.langsw a{padding:4px 5px}}
   .contact-info a{display:flex;align-items:center;gap:11px;color:var(--text);padding:11px 0;border-bottom:1px solid var(--line);font-size:.96rem}
   .contact-info a:hover{color:var(--gold)}
   .promise{margin-top:20px;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--gold-soft);font-size:.9rem}
@@ -346,6 +351,7 @@
 
       <form class="full" name="orcamento-juridico" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="orcamento-juridico" />
+        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento | %{formName} | %{submissionId}" />
         <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
         <label>Nome</label>
         <input aria-label="Nome" type="text" name="name" placeholder="Seu nome" required />
@@ -367,8 +373,12 @@
         <select aria-label="Par de idiomas" name="languages">
           <option value="">Selecione…</option>
           <option>Português ⇄ Inglês</option>
+          <option>Inglês → Português</option>
           <option>Português ⇄ Espanhol</option>
+          <option>Inglês → Espanhol</option>
           <option>Português ⇄ Francês</option>
+          <option>Várias combinações</option>
+          <option>Outro par (sob consulta)</option>
           <option>Outra combinação</option>
         </select>
         <label>Detalhes do caso</label>

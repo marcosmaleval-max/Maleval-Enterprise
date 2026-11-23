@@ -183,7 +183,14 @@ window.MV_LANG='es';
   details[open] summary::after{content:"−"}
   details p{color:var(--muted);margin-top:12px;font-size:.94rem}
   .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
-  @media(max-width:880px){.contact{grid-template-columns:1fr}}
+  @media(max-width:880px){.contact{grid-template-columns:minmax(0,1fr)}}
+  /* Layout movel 23/11/2026: nenhum bloco mais largo que a tela */
+  .foot-links{flex-wrap:wrap}
+  .contact-info a{overflow-wrap:anywhere}
+  @media(max-width:600px){.btn:not(.nav-cta){white-space:normal;text-align:center}.nav-links{gap:10px}}
+  @media(max-width:400px){.nav-links{gap:6px}.nav-links .nav-cta{padding:8px 11px;font-size:.84rem}.langsw a{padding:4px 5px}}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:880px){.g4{grid-template-columns:minmax(0,1fr)}}
   .contact-info a{display:flex;align-items:center;gap:11px;color:var(--text);padding:11px 0;border-bottom:1px solid var(--line);font-size:.96rem}
   .contact-info a:hover{color:var(--gold)}
   .promise{margin-top:20px;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--gold-soft);font-size:.9rem}
@@ -270,8 +277,9 @@ window.MV_LANG='es';
         <h2 style="font-size:1.6rem">Guía: Cómo contratar a un intérprete para su próxima conferencia internacional</h2>
         <p class="lead">Los 7 errores más comunes al contratar interpretación — y cómo evitarlos antes de que comprometan un evento de meses de preparación. Directo al grano, en PDF.</p>
       </div>
-      <form name="lead-magnet-es" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
+      <form name="lead-magnet-es" method="POST" data-netlify="true" action="/gracias" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="lead-magnet-es" />
+        <input type="hidden" name="subject" data-remove-prefix value="Solicitação de guia | %{formName} | %{submissionId}" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
         <input aria-label="Su nombre" type="text" name="name" placeholder="Su nombre" required />
         <input aria-label="Su mejor correo electrónico" type="email" name="email" placeholder="Su mejor correo electrónico" required />
@@ -387,7 +395,7 @@ window.MV_LANG='es';
   <div class="wrap">
     <p class="eyebrow">Cómo trabajo</p>
     <h2>4 pasos para que su comunicación internacional funcione a la perfección</h2>
-    <div class="grid g3" style="margin-top:36px;grid-template-columns:repeat(4,1fr)">
+    <div class="grid g3 g4" style="margin-top:36px">
       <div class="card"><div class="num">01</div><h3>Briefing</h3><p>Comprendo el contexto, el público y los objetivos de su proyecto.</p></div>
       <div class="card"><div class="num">02</div><h3>Propuesta</h3><p>Alcance, plazo y precio claros — en 1 día hábil, sin sorpresas.</p></div>
       <div class="card"><div class="num">03</div><h3>Ejecución</h3><p>Traducción o interpretación con rigor terminológico y cultural.</p></div>
@@ -423,8 +431,9 @@ window.MV_LANG='es';
         <a href="https://www.linkedin.com/in/malevaltraducoes/">in · https://www.linkedin.com/in/malevaltraducoes/</a>
         <div class="promise">⏱️ Respuesta en 1 día hábil · remoto en todo el mundo y presencial en Brasil.</div>
       </div>
-      <form class="full" name="quote-es" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
+      <form class="full" name="quote-es" method="POST" data-netlify="true" action="/gracias" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quote-es" />
+        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento | %{formName} | %{submissionId}" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
         <label>Nombre</label>
         <input aria-label="Nombre" type="text" name="name" placeholder="Su nombre" required />
@@ -444,9 +453,12 @@ window.MV_LANG='es';
         <select aria-label="Par de idiomas" name="languages">
           <option value="">Seleccione…</option>
           <option>Portugués ⇄ Inglés</option>
+          <option>Inglés → Portugués</option>
           <option>Portugués ⇄ Español</option>
+          <option>Inglés → Español</option>
           <option>Portugués ⇄ Francés</option>
-          <option>Otro par de idiomas (otros pares bajo consulta)</option>
+          <option>Varias combinaciones</option>
+          <option>Otro par (bajo consulta)</option>
           <option>Otra combinación</option>
         </select>
         <label>Detalles del proyecto</label>

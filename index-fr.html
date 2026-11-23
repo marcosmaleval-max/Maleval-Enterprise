@@ -183,7 +183,14 @@ window.MV_LANG='fr';
   details[open] summary::after{content:"−"}
   details p{color:var(--muted);margin-top:12px;font-size:.94rem}
   .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
-  @media(max-width:880px){.contact{grid-template-columns:1fr}}
+  @media(max-width:880px){.contact{grid-template-columns:minmax(0,1fr)}}
+  /* Layout movel 23/11/2026: nenhum bloco mais largo que a tela */
+  .foot-links{flex-wrap:wrap}
+  .contact-info a{overflow-wrap:anywhere}
+  @media(max-width:600px){.btn:not(.nav-cta){white-space:normal;text-align:center}.nav-links{gap:10px}}
+  @media(max-width:400px){.nav-links{gap:6px}.nav-links .nav-cta{padding:8px 11px;font-size:.84rem}.langsw a{padding:4px 5px}}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:880px){.g4{grid-template-columns:minmax(0,1fr)}}
   .contact-info a{display:flex;align-items:center;gap:11px;color:var(--text);padding:11px 0;border-bottom:1px solid var(--line);font-size:.96rem}
   .contact-info a:hover{color:var(--gold)}
   .promise{margin-top:20px;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--gold-soft);font-size:.9rem}
@@ -270,8 +277,9 @@ window.MV_LANG='fr';
         <h2 style="font-size:1.6rem">Guide : Comment recruter un interprète pour votre prochaine conférence internationale</h2>
         <p class="lead">Les 7 erreurs les plus courantes lors de la réservation d'une interprétation — et comment les éviter avant qu'elles ne compromettent un événement préparé depuis des mois. Droit au but, en PDF.</p>
       </div>
-      <form name="lead-magnet-fr" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
+      <form name="lead-magnet-fr" method="POST" data-netlify="true" action="/merci" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="lead-magnet-fr" />
+        <input type="hidden" name="subject" data-remove-prefix value="Solicitação de guia | %{formName} | %{submissionId}" />
         <p hidden><label>Ne pas remplir : <input name="bot-field" /></label></p>
         <input aria-label="Votre nom" type="text" name="name" placeholder="Votre nom" required />
         <input aria-label="Votre meilleur e-mail" type="email" name="email" placeholder="Votre meilleur e-mail" required />
@@ -387,7 +395,7 @@ window.MV_LANG='fr';
   <div class="wrap">
     <p class="eyebrow">Comment je travaille</p>
     <h2>4 étapes pour que votre communication internationale fonctionne parfaitement</h2>
-    <div class="grid g3" style="margin-top:36px;grid-template-columns:repeat(4,1fr)">
+    <div class="grid g3 g4" style="margin-top:36px">
       <div class="card"><div class="num">01</div><h3>Briefing</h3><p>Je comprends le contexte, le public et les objectifs de votre projet.</p></div>
       <div class="card"><div class="num">02</div><h3>Proposition</h3><p>Périmètre, délai et prix clairs — sous 1 jour ouvré, sans surprises.</p></div>
       <div class="card"><div class="num">03</div><h3>Exécution</h3><p>Traduction ou interprétation avec rigueur terminologique et culturelle.</p></div>
@@ -423,8 +431,9 @@ window.MV_LANG='fr';
         <a href="https://www.linkedin.com/in/malevaltraducoes/">in · https://www.linkedin.com/in/malevaltraducoes/</a>
         <div class="promise">⏱️ Réponse sous 1 jour ouvré · à distance dans le monde entier et sur place au Brésil.</div>
       </div>
-      <form class="full" name="quote-fr" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
+      <form class="full" name="quote-fr" method="POST" data-netlify="true" action="/merci" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quote-fr" />
+        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento | %{formName} | %{submissionId}" />
         <p hidden><label>Ne pas remplir : <input name="bot-field" /></label></p>
         <label>Nom</label>
         <input aria-label="Nom" type="text" name="name" placeholder="Votre nom" required />
@@ -444,10 +453,12 @@ window.MV_LANG='fr';
         <select aria-label="Paire de langues" name="languages">
           <option value="">Sélectionnez…</option>
           <option>Portugais ⇄ Anglais</option>
+          <option>Anglais → Portugais</option>
           <option>Portugais ⇄ Espagnol</option>
+          <option>Anglais → Espagnol</option>
           <option>Portugais ⇄ Français</option>
-          <option>Autre paire de langues (autres paires sur demande)</option>
-          <option>Autre paire de langues (autres paires sur demande)</option>
+          <option>Plusieurs combinaisons</option>
+          <option>Autre (sur demande)</option>
           <option>Autre combinaison</option>
         </select>
         <label>Détails du projet</label>
