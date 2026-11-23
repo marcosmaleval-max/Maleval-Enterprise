@@ -279,7 +279,7 @@ window.MV_LANG='es';
       </div>
       <form name="lead-magnet-es" method="POST" data-netlify="true" action="/gracias" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="lead-magnet-es" />
-        <input type="hidden" name="subject" data-remove-prefix value="Pedido do guia pelo site | %{formName} | %{submissionId}" />
+        <input type="hidden" name="subject" data-remove-prefix value="Solicitação de guia | %{formName} | %{submissionId}" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
         <input aria-label="Su nombre" type="text" name="name" placeholder="Su nombre" required />
         <input aria-label="Su mejor correo electrónico" type="email" name="email" placeholder="Su mejor correo electrónico" required />
@@ -433,7 +433,7 @@ window.MV_LANG='es';
       </div>
       <form class="full" name="quote-es" method="POST" data-netlify="true" action="/gracias" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quote-es" />
-        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento pelo site | %{formName} | %{submissionId}" />
+        <input type="hidden" name="subject" data-remove-prefix value="Novo orçamento | %{formName} | %{submissionId}" />
         <p hidden><label>No rellenar: <input name="bot-field" /></label></p>
         <label>Nombre</label>
         <input aria-label="Nombre" type="text" name="name" placeholder="Su nombre" required />
@@ -514,10 +514,6 @@ if(window.MV_AUTOTRANSLATE){
   var d=document.createElement('div');d.id='google_translate_element';d.style.cssText='position:fixed;bottom:0;left:0;z-index:200';document.body.appendChild(d);
   window.googleTranslateElementInit=function(){new google.translate.TranslateElement({pageLanguage:window.MV_LANG,autoDisplay:false},'google_translate_element');};
 }
-</script>
-<script>
-/* Assunto individual do aviso de formulario (23/11/2026): cada pedido vira uma conversa propria no e-mail. Sem JavaScript, vale o assunto fixo do campo oculto. */
-document.addEventListener('submit',function(e){try{var f=e.target;if(!f||!f.querySelector)return;var s=f.querySelector('input[name="subject"]');if(!s)return;var v=function(n){var x=f.querySelector('[name="'+n+'"]');return x&&x.value?String(x.value).replace(/[\r\n%{}|]+/g,' ').replace(/\s+/g,' ').trim().slice(0,60):''};var n=v('name'),c=v('company');if(!n)return;var p=s.value.split(' | ');if(p.length<3)return;s.value=p[0]+' | '+n+(c?' ('+c+')':'')+' | '+p.slice(-2).join(' | ')}catch(x){}},true);
 </script>
 </body>
 </html>
