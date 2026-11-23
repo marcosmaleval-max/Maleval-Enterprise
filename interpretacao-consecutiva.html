@@ -321,6 +321,7 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 </div>
 <form class="full" name="orcamento-consecutiva" method="POST" data-netlify="true" action="/obrigado" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="orcamento-consecutiva" />
+<input type="hidden" name="subject" data-remove-prefix value="Novo orçamento pelo site | %{formName} | %{submissionId}" />
 <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
 <label>Nome</label>
 <input aria-label="Nome" type="text" name="name" placeholder="Seu nome" required />
@@ -381,5 +382,9 @@ footer{background:var(--bg-soft);border-top:1px solid var(--line);padding:46px 0
 <a class="wa-float" href="https://wa.me/5584996200321">💬 WhatsApp</a>
 
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+/* Assunto individual do aviso de formulario (23/11/2026): cada pedido vira uma conversa propria no e-mail. Sem JavaScript, vale o assunto fixo do campo oculto. */
+document.addEventListener('submit',function(e){try{var f=e.target;if(!f||!f.querySelector)return;var s=f.querySelector('input[name="subject"]');if(!s)return;var v=function(n){var x=f.querySelector('[name="'+n+'"]');return x&&x.value?String(x.value).replace(/[\r\n%{}|]+/g,' ').replace(/\s+/g,' ').trim().slice(0,60):''};var n=v('name'),c=v('company');if(!n)return;var p=s.value.split(' | ');if(p.length<3)return;s.value=p[0]+' | '+n+(c?' ('+c+')':'')+' | '+p.slice(-2).join(' | ')}catch(x){}},true);
+</script>
 </body>
 </html>
