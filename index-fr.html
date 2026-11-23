@@ -189,6 +189,8 @@ window.MV_LANG='fr';
   .contact-info a{overflow-wrap:anywhere}
   @media(max-width:600px){.btn:not(.nav-cta){white-space:normal;text-align:center}.nav-links{gap:10px}}
   @media(max-width:400px){.nav-links{gap:6px}.nav-links .nav-cta{padding:8px 11px;font-size:.84rem}.langsw a{padding:4px 5px}}
+/* Topo em telas de ate 340 px (23/11/2026): o botao "Me contacter" passava 0,7 px da borda a 320 px */
+@media(max-width:340px){.nav-links .nav-cta{padding:8px 8px}}
   .g4{grid-template-columns:repeat(4,1fr)}
   @media(max-width:880px){.g4{grid-template-columns:minmax(0,1fr)}}
   .contact-info a{display:flex;align-items:center;gap:11px;color:var(--text);padding:11px 0;border-bottom:1px solid var(--line);font-size:.96rem}
