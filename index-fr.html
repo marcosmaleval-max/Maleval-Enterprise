@@ -450,19 +450,22 @@ window.MV_LANG='fr';
           <option>Autre / je ne sais pas</option>
         </select>
         <label>Paire de langues</label>
-        <select aria-label="Paire de langues" name="languages">
+        <select aria-label="Paire de langues" name="languages" required>
           <option value="">Sélectionnez…</option>
-          <option>Portugais ⇄ Anglais</option>
-          <option>Anglais → Portugais</option>
-          <option>Portugais ⇄ Espagnol</option>
-          <option>Anglais → Espagnol</option>
-          <option>Portugais ⇄ Français</option>
-          <option>Plusieurs combinaisons</option>
-          <option>Autre (sur demande)</option>
-          <option>Autre combinaison</option>
+          <option value="PT ⇄ EN">Portugais ⇄ Anglais</option>
+          <option value="EN → PT">Anglais → Portugais</option>
+          <option value="PT ⇄ ES">Portugais ⇄ Espagnol</option>
+          <option value="EN → ES">Anglais → Espagnol</option>
+          <option value="PT ⇄ FR">Portugais ⇄ Français</option>
+          <option value="EN ⇄ FR">Anglais ⇄ Français</option>
+          <option value="ES ⇄ FR">Espagnol ⇄ Français</option>
+          <option value="MULTI" data-free="1">Plusieurs combinaisons</option>
+          <option value="OTHER" data-free="1">Autre (sur demande)</option>
         </select>
+        <label>Quelles combinaisons ? (si absente de la liste)</label>
+        <input aria-label="Quelles combinaisons de langues" type="text" name="languages_other" placeholder="Ex. : anglais → espagnol et anglais → portugais" />
         <label>Détails du projet</label>
-        <textarea aria-label="Détails du projet" name="details" rows="4" placeholder="Date, type d'événement ou de document, nombre d'heures/pages…"></textarea>
+        <textarea aria-label="Détails du projet" name="details" rows="4" placeholder="Date, type d'événement ou de document, nombre d'heures/pages…" required></textarea>
         <button class="btn btn-gold" type="submit" style="justify-content:center">Demander une proposition sous 1 jour ouvré</button>
         <small style="color:var(--muted)">Votre demande m'est adressée directement. Je répondrai dès que possible. J'assure personnellement l'interprétation ; la traduction écrite est confiée à l'équipe interne de traducteurs natifs.</small>
         <p style="font-size:.78rem;color:var(--muted);margin:4px 0 0;line-height:1.45">Ce formulaire est réservé aux <strong>demandes de devis</strong>. Les candidatures, CV et offres de prestataires ne sont pas acceptés.</p>
@@ -514,6 +517,37 @@ if(window.MV_AUTOTRANSLATE){
   var d=document.createElement('div');d.id='google_translate_element';d.style.cssText='position:fixed;bottom:0;left:0;z-index:200';document.body.appendChild(d);
   window.googleTranslateElementInit=function(){new google.translate.TranslateElement({pageLanguage:window.MV_LANG,autoDisplay:false},'google_translate_element');};
 }
+</script>
+<script>
+/* Formulario: integridade do lead (2026-11-24) - nenhum envio vazio, par de idiomas sempre explicito */
+(function(){
+  var forms = document.querySelectorAll('form[data-netlify="true"]');
+  Array.prototype.forEach.call(forms, function(f){
+    var sel = f.querySelector('select[name="languages"]');
+    var other = f.querySelector('input[name="languages_other"]');
+    if (sel && other) {
+      var sync = function(){
+        var o = sel.options[sel.selectedIndex];
+        var need = !!(o && o.getAttribute('data-free'));
+        other.required = need;
+        other.setAttribute('aria-required', need ? 'true' : 'false');
+        if (need) { other.setAttribute('data-needed','1'); } else { other.removeAttribute('data-needed'); }
+      };
+      sel.addEventListener('change', sync);
+      sync();
+    }
+    f.addEventListener('submit', function(ev){
+      var bot = f.querySelector('input[name="bot-field"]');
+      if (bot && String(bot.value).trim() !== '') { ev.preventDefault(); return false; }
+      var filled = 0;
+      Array.prototype.forEach.call(f.elements, function(el){
+        if (!el.name || el.type === 'hidden' || el.name === 'bot-field') { return; }
+        if (typeof el.value === 'string' && el.value.trim() !== '') { filled++; }
+      });
+      if (filled === 0) { ev.preventDefault(); return false; }
+    });
+  });
+})();
 </script>
 </body>
 </html>
