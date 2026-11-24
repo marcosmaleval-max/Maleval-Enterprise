@@ -407,7 +407,9 @@
 <script>
 /* Formulario: integridade do lead (2026-11-24) - nenhum envio vazio, par de idiomas sempre explicito */
 (function(){
-  var forms = document.querySelectorAll('form[data-netlify="true"]');
+  var forms = Array.prototype.filter.call(document.querySelectorAll('form'), function(f){
+    return f.querySelector('input[name="form-name"]') || f.hasAttribute('data-netlify') || f.hasAttribute('netlify');
+  });
   Array.prototype.forEach.call(forms, function(f){
     var sel = f.querySelector('select[name="languages"]');
     var other = f.querySelector('input[name="languages_other"]');
